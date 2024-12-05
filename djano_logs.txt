@@ -1,10 +1,2 @@
-django.utils.autoreload INFO 2024-12-05 17:24:53,550 autoreload.py (line 668). 37108 126702069674112 Watching for file changes with StatReloader
-demolog.views INFO 2024-12-05 17:25:02,762 views.py (line 12). 37108 126702017578688 Testing my logger
-demolog.views ERROR 2024-12-05 17:25:02,773 views.py (line 16). 37108 126702017578688 User with ID 1 does not exist
-django.utils.autoreload INFO 2024-12-05 17:25:22,534 autoreload.py (line 266). 37108 126702069674112 /mnt/mydrive/Job/Learning/Logging/myproject/settings.py changed, reloading.
-django.utils.autoreload INFO 2024-12-05 17:25:23,132 autoreload.py (line 668). 37427 137638582935680 Watching for file changes with StatReloader
-django.utils.autoreload INFO 2024-12-05 17:25:26,354 autoreload.py (line 668). 37474 124867782377600 Watching for file changes with StatReloader
-demolog.views INFO 2024-12-05 17:25:28,111 views.py (line 12). 37474 124867728901824 Testing my logger
-demolog.views ERROR 2024-12-05 17:25:28,116 views.py (line 16). 37474 124867728901824 User with ID 1 does not exist
-demolog.views INFO 2024-12-05 17:25:30,252 views.py (line 12). 37474 124867728901824 Testing my logger
-demolog.views ERROR 2024-12-05 17:25:30,256 views.py (line 16). 37474 124867728901824 User with ID 1 does not exist
+demolog.views INFO 2024-12-05 17:33:58,779 views.py (line 12). 41683 130867099862720 Testing my logger
+demolog.views ERROR 2024-12-05 17:33:58,788 views.py (line 16). 41683 130867099862720 User with ID 1 does not exist

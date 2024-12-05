@@ -131,6 +131,12 @@ LOGGING = {
             "filename":env("DJANGO_LOG_FILE"),
             "level":env("DJANGO_LOG_LEVEL"),
             "formatter":"verbose"
+        }, 
+        "file2":{
+            "class":"logging.FileHandler",
+            "filename":env("DJANGO_LOG_FILE2"),
+            "level":env("DJANGO_LOG_LEVEL"),
+            "formatter":"verbose"
         },
         "console":{
             "class":"logging.StreamHandler",
@@ -139,10 +145,20 @@ LOGGING = {
         },
     },
     "loggers":{
-        "": {
+        "myproject": {
             "level": "DEBUG",
-            "handlers":["file","console"]
-        }
+            "handlers":["file2"]
+        },  
+        "myproject.views": {
+            "level": "DEBUG",
+            "handlers":["file","console"],
+            "propagate":False
+        }, 
+        "demolog.views": {
+            "level": "DEBUG",
+            "handlers":["file","console"],
+            "propagate":False
+        },
     },
 
     "formatters":{
