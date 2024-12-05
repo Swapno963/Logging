@@ -135,13 +135,25 @@ LOGGING = {
         "file":{
             "class":"logging.FileHandler",
             "filename":"general.log",
-            "level":"DEBUG"
+            "level":"DEBUG",
+            "formatter":"verbose"
         }
     },
     "loggers":{
         "": {
             "level": "DEBUG",
             "handlers":["file"]
+        }
+    },
+
+    "formatters":{
+        "verbose":{
+            "format": "{name} {levelname} {asctime} {module}.py (line {lineno:d}). {process:d} {thread:d} {message}",
+            "style":"{",
+        },
+        "simple":{
+            "format":"{levelname} {message}",
+            "style":"{"
         }
     }
 
