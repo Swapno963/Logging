@@ -137,12 +137,17 @@ LOGGING = {
             "filename":"general.log",
             "level":"DEBUG",
             "formatter":"verbose"
-        }
+        },
+        "console":{
+            "class":"logging.StreamHandler",
+            "level":"DEBUG",
+            "formatter":"verbose"
+        },
     },
     "loggers":{
         "": {
             "level": "DEBUG",
-            "handlers":["file"]
+            "handlers":["file","console"]
         }
     },
 
